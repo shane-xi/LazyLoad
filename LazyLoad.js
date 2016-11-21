@@ -1,4 +1,7 @@
 var LazyLoad = (function () {
+	/**
+	 *   浅复制
+	 */
 	function extend(target,source){
 		var obj ={};
 		var i,j;
@@ -14,6 +17,9 @@ var LazyLoad = (function () {
 		}
 		return obj;
 	}
+	/**
+	 *   函数节流
+	 */
 	function throttle (method , delay , mustRun) {
 		var timer = null ;
 		var startTime =  new Date();  //Date.now(),+new Date()显示毫秒数
